@@ -43,7 +43,7 @@ def evaluate(expr, variables):
 def wertetabelle(variablestring, expr):
     variables = {}
     for e in variablestring:
-        if e != " " and e not in variables:
+        if e != " " and e != "," and e not in variables:
             variables[e] = Expr(0)
     for k in variables:
         print(k, end=" ")
